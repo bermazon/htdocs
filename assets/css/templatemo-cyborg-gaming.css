@@ -808,12 +808,12 @@ Most Popular Style
 .most-popular {
   margin-top: 60px;
   padding: 30px;
-  background-color: #1f2122;
+  background-color: #00aaff;
   border-radius: 23px;
 }
 
 .most-popular .item {
-  background-color: #27292a;
+  background-color: #4e034a;
   padding: 30px 15px;
   border-radius: 23px;
   margin-bottom: 30px;
@@ -860,7 +860,7 @@ Most Popular Style
 }
 
 .most-popular .item ul li:last-child i {
-  color: #ec6090;
+  color: #00540f;
 }
 
 .most-popular .main-button {
