@@ -159,7 +159,7 @@ p {
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #e75e8d;
+  background-color: #bcff00;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -796,7 +796,7 @@ Banner Style
 
 .main-banner h4 em {
   font-style: normal;
-  color: #ec6090;
+  color: #bcff00;
 }
 
 /* 
