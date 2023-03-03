@@ -1,0 +1,198 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
+
+@layer components {
+    .nav-item {
+        @apply h-full flex items-center uppercase text-[14px] text-gray-700 transition duration-200 ease-in-out font-semibold md:border-b-4 md:border-transparent md:hover:border-b-[#eeb425];
+    }
+
+    .dropdown-item {
+        @apply block py-2 px-4 hover:bg-gray-100 font-semibold;
+    }
+}
+
+* {
+    font-family: poppins, sans-serif
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #2c3039
+}
+
+::-webkit-scrollbar {
+    width: 16px
+}
+
+::placeholder {
+    color: #626565;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #626565
+}
+
+::-ms-input-placeholder {
+    color: #626565
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(2px 1px 0 #fff) drop-shadow(-2px 1px 0 #fff)
+    drop-shadow(0 -2px 0 #fff);
+}
+
+.drop-shadow-thin {
+    -webkit-filter: drop-shadow(1px 1px 0 #fff) drop-shadow(-1px 1px 0 #fff)
+    drop-shadow(0 -1px 0 #fff);
+}
+
+.article-image {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-position: 300px 220px !important;
+    margin: 0 0 20px;
+    transition: .3s;
+}
+
+.article-image-slide {
+    background-position: 350px 220px !important;
+}
+
+.recent-articles {
+   background-blend-mode: multiply;
+}
+
+.camera-icon {
+    background: #242c31 url('/public/assets/images/icons/camera.png') no-repeat center;
+}
+
+.discord-icon {
+    background: #25658d url('/public/assets/images/icons/discord.png') no-repeat center;
+}
+
+html.dark .camera-icon {
+    background: #25658d url('/public/assets/images/icons/camera.png') no-repeat center;
+}
+
+.hotel-icon {
+    background: #f68b08 url('/public/assets/images/icons/feeds.png') no-repeat center;
+}
+
+.nav-credit-icon {
+    background: #e9b124 url('/public/assets/images/icons/currency/credits.png') no-repeat center;
+    outline: 1px solid #b26d18;
+}
+
+.nav-ducket-icon {
+    background: #c44aac url('/public/assets/images/icons/currency/duckets.png') no-repeat center;
+    outline: 1px solid #812378;
+}
+
+.nav-diamond-icon {
+    background: #caf1f3 url('/public/assets/images/icons/currency/diamonds.png') no-repeat center;
+    outline: 1px solid #6caff4;
+}
+
+.me-backdrop {
+    height: 180px;
+    background-blend-mode: multiply;
+}
+
+.staff-bg {
+    background-blend-mode: multiply;
+}
+
+/* Nitro disconnect overlay */
+#disconnected {
+    display: none;
+}
+
+.profile-bg {
+    background: rgba(0, 0, 0, 0.5) url('/public/assets/images/profile/profile-bg.png');
+    background-blend-mode: multiply;
+}
+
+.leaderboard-first {
+    background: #f9d83e url('/public/assets/images/leaderboards/trophy-gold.png') no-repeat center;
+    color: transparent;
+}
+
+.leaderboard-second {
+    background: #b8c4d4 url('/public/assets/images/leaderboards/trophy-silver.png') no-repeat center;
+    color: transparent;
+}
+
+.leaderboard-third {
+    background: #f1851b url('/public/assets/images/leaderboards/trophy-bronze.png') no-repeat center;
+    color: transparent;
+}
+
+.site-bg {
+    background: url('/public/assets/images/background-light.jpg') no-repeat fixed right bottom;
+}
+
+html.dark .site-bg {
+    background: url('/public/assets/images/background-dark.jpg') no-repeat fixed right bottom;
+}
+
+html.dark .swal2-popup {
+    background: rgb(17 24 39);
+    color: white;
+}
+
+.turbolinks-progress-bar {
+    height: 5px;
+    background-color: #e9b124;
+    border-radius: 5px;
+}
+
+.navigation-icon {
+    width: 20px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation-icon.shop {
+    background-image: url('/public/assets/images/icons/navigation/shop.png');
+}
+
+.navigation-icon.leaderboards {
+    background-image: url('/public/assets/images/icons/navigation/leaderboards.png');
+}
+
+.navigation-icon.rules {
+    background-image: url('/public/assets/images/icons/navigation/rules.gif');
+}
+
+.navigation-icon.home {
+    background-image: url('/public/assets/images/icons/navigation/home.png');
+}
+
+.navigation-icon.community {
+    background-image: url('/public/assets/images/icons/navigation/community.png');
+}
+
+.swiper-slide {
+    height: 215px !important;
+}
+
+.swiper-pagination-bullet-active,
+html.dark .swiper-pagination-bullet-active {
+    background: #e9b124 !important;
+}
+
+html.dark .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    background: white !important;
+}
